@@ -136,11 +136,11 @@ list.pop();
             }
 
             dis = dis + " \n";
-            dis = dis + "Total Foods = " + total/2 + "\n";
-            dis = dis + "Total Price = " + totalPrice/2 + "\n";
-            dis = dis + "Total Price * " + mult + " = " + (totalPrice/2)*mult + "\n";
-            dis = dis + "Total Blankets Required = " + ((totalPrice*mult/2)/1098).toFixed(2)+ "\n";
-            dis = dis + "Total Rings Required = " + ((totalPrice*mult/2)/824).toFixed(2)+ "\n";
+            dis = dis + "مجموع المنتجات = " + total/2 + "\n";
+            dis = dis + "مجموع السعر العادي = " + totalPrice/2 + "\n";
+            dis = dis + "مجموع السعر ضرب  " + mult + " = " + (totalPrice/2)*mult + "\n";
+            dis = dis + "مجموع البطانيات المطلوبة = " + ((totalPrice*mult/2)/1098).toFixed(2)+ "\n";
+            dis = dis + "مجموع الخواتم المطلوبة = " + ((totalPrice*mult/2)/824).toFixed(2)+ "\n";
             document.getElementById("display").innerHTML = dis;
             SetCookie("Price_Calculator", encode)
             //document.write(encode)
@@ -179,93 +179,93 @@ list.pop();
             (
         
 
-                new Food("Axe", 5, 36 , "Tools", "Axes"),
-                new Food("Saw", 5, 54 , "Tools", "Saw"),
-                new Food("Dynamite", 5, 25 , "Tools", "Dynamite"),
-                new Food("TNT barrel", 5, 72 , "Tools", "TNT_Barrel"),
-                new Food("Shovel", 5, 108 , "Tools", "Shovel"),
-                new Food("Pickaxe", 34, 126 , "Tools", "Pickaxe"),
+                new Food("فأس", 5, 36 , "الأدوات", "Axes"),
+                new Food("منشار", 5, 54 , "الأدوات", "Saw"),
+                new Food("ديناميت", 5, 25 , "الأدوات", "Dynamite"),
+                new Food("برميل متفجرات", 5, 72 , "الأدوات", "TNT_Barrel"),
+                new Food("مجرفة", 5, 108 , "الأدوات", "Shovel"),
+                new Food("معول", 34, 126 , "الأدوات", "Pickaxe"),
         
-                new Food("Lemon Lotion", 84, 403 , "Bath Kiosk", "Lemon_Lotion"),
-                new Food("Honey Soap", 84, 327 , "Bath Kiosk", "Honey_Soap"),
-                new Food("Exfoliating Soap", 93, 363 , "Bath Kiosk", "Exfoliating_Soap"),
-                new Food("Honey Face Mask", 99, 320 , "Bath Kiosk", "Honey_Face_Mask"),
+                new Food("غسول الليمون", 84, 403 , "كشك الحمام", "Lemon_Lotion"),
+                new Food("صابون العسل", 84, 327 , "كشك الحمام", "Honey_Soap"),
+                new Food("صابون التقشير", 93, 363 , "كشك الحمام", "Exfoliating_Soap"),
+                new Food("قناع الوجه بالعسل", 99, 320 , "كشك الحمام", "Honey_Face_Mask"),
                 
-                new Food("Bread", 2, 21 , "Bakery", "Bread"),
-                new Food("Cookie", 10, 104 , "Bakery", "Cookie"),
-                new Food("Corn Bread", 7, 72 , "Bakery", "Corn_Bread"),
-                new Food("Pizza", 33, 190 , "Bakery", "Pizza"),
-                new Food("Spicy Pizza", 37, 226 , "Bakery", "Spicy_Pizza"),
-                new Food("Raspberry Muffin", 19, 140 , "Bakery", "Raspberry_Muffin"),
-                new Food("Blackberry Muffin", 26, 226 , "Bakery", "Blackberry_Muffin"),
-                new Food("Potato Bread", 39, 284 , "Bakery", "Potato_Bread"),
-                new Food("Frutti di Mare Pizza", 45, 403 , "Bakery", "Frutti_di_Mare_Pizza"),
-                new Food("Banana Bread", 91, 424 , "Bakery", "Banana_Bread"),
-                new Food("Gingerbread Cookie", 86, 273 , "Bakery", "Gingerbread_Cookie"),
-                new Food("Macaroon", 101, 421 , "Bakery", "Macaroon"),
+                new Food("خبر", 2, 21 , "المخبز", "Bread"),
+                new Food("كعكة صغيرة", 10, 104 , "المخبز", "Cookie"),
+                new Food("خبز الذرة", 7, 72 , "المخبز", "Corn_Bread"),
+                new Food("بيتزا", 33, 190 , "المخبز", "Pizza"),
+                new Food("بيتزا متبلة", 37, 226 , "المخبز", "Spicy_Pizza"),
+                new Food("كعكة التوت", 19, 140 , "المخبز", "Raspberry_Muffin"),
+                new Food("كعكة توت العليق", 26, 226 , "المخبز", "Blackberry_Muffin"),
+                new Food("خبز البطاطس", 39, 284 , "المخبز", "Potato_Bread"),
+                new Food("بيتزا فروتي دي ماري", 45, 403 , "المخبز", "Frutti_di_Mare_Pizza"),
+                new Food("خبز الموز", 91, 424 , "المخبز", "Banana_Bread"),
+                new Food("كوكي الزنجبيل", 86, 273 , "المخبز", "Gingerbread_Cookie"),
+                new Food("معكرون", 101, 421 , "المخبز", "Macaroon"),
         
-                new Food("Pancakes", 9, 108 , "BBQ Grill", "Pancake"),
-                new Food("Bacon and Eggs", 11, 201 , "BBQ Grill", "Bacon_and_Eggs"),
-                new Food("Hamburger", 18, 180 , "BBQ Grill", "Hamburger"),
-                new Food("Roasted Tomatoes", 30, 118 , "BBQ Grill", "Roasted_Tomatoes"),
-                new Food("Baked Potato", 35, 298 , "BBQ Grill", "Baked_Potato"),
-                new Food("Fish burger", 27, 226 , "BBQ Grill", "Fish_burgers"),
-                new Food("Fish and Chips", 41, 244 , "BBQ Grill", "Fish_and_Chips"),
-                new Food("Lobster Skewer", 48, 417 , "BBQ Grill", "Lobster_Skewer"),
-                new Food("Grilled Onion", 68, 190 , "BBQ Grill", "Grilled_Onion"),
-                new Food("Banana Pancakes", 94, 352 , "BBQ Grill", "Banana_Pancakes"),
-                new Food("Grilled Eggplant", 90, 324 , "BBQ Grill", "Grilled_Eggplant"),
-                new Food("Fish Skewer", 96, 176 , "BBQ Grill", "Fish_Skewer"),
-                new Food("Winter Veggies", 72, 198 , "BBQ Grill", "Winter_Veggies"),
-                new Food("Garlic Bread", 60, 198 , "BBQ Grill", "Garlic_Bread"),
-                new Food("Stuffed Peppers", 80, 352 , "BBQ Grill", "Stuffed_Peppers"),
+                new Food("فطيرة مقلية", 9, 108 , "شواية لحم", "Pancake"),
+                new Food("لحم مقدد وبيض", 11, 201 ,  "شواية لحم", "Bacon_and_Eggs"),
+                new Food("هامبورجر", 18, 180 ,  "شواية لحم", "Hamburger"),
+                new Food("طماطم مشوية", 30, 118 ,  "شواية لحم", "Roasted_Tomatoes"),
+                new Food("بطاطس مخبوزة", 35, 298 ,  "شواية لحم", "Baked_Potato"),
+                new Food("برجر سمك", 27, 226 ,  "شواية لحم", "Fish_burgers"),
+                new Food("سمك ورقائق", 41, 244 ,  "شواية لحم", "Fish_and_Chips"),
+                new Food("سيخ سرطان البحر", 48, 417 ,  "شواية لحم", "Lobster_Skewer"),
+                new Food("بصل مشوي", 68, 190 ,  "شواية لحم", "Grilled_Onion"),
+                new Food("شطائر الموز", 94, 352 ,  "شواية لحم", "Banana_Pancakes"),
+                new Food("باذنجان مشوي", 90, 324 ,  "شواية لحم", "Grilled_Eggplant"),
+                new Food("سيخ سمك", 96, 176 ,  "شواية لحم", "Fish_Skewer"),
+                new Food("خضروات مشتوية", 72, 198 ,  "شواية لحم", "Winter_Veggies"),
+                new Food("خبز الثوم", 60, 198 ,  "شواية لحم", "Garlic_Bread"),
+                new Food("فلفل محشو", 80, 352 ,  "شواية لحم", "Stuffed_Peppers"),
                 
-                new Food("Cheese Cake", 24, 284 , "Cake Oven", "Cheese_cake"),
-                new Food("Carrot Cake", 21, 165 , "Cake Oven", "Carrot_Cake"),
-                new Food("Cream Cake", 23, 219 , "Cake Oven", "Cream_Cake"),
-                new Food("Chocolate Cake", 36, 320 , "Cake Oven", "Chocolate_Cake"),
-                new Food("Strawberry Cake", 35, 316 , "Cake Oven", "Strawberry_Cake"),
-                new Food("Red Berry Cake", 23, 255 , "Cake Oven", "Red_Berry_Cake"),
-                new Food("Potato Feta Cake", 38, 309 , "Cake Oven", "Potato_Feta_Cake"),
-                new Food("Lemon Cake", 68, 896 , "Cake Oven", "Lemon_Cake"),
-                new Food("Honey Apple Cake", 42, 482 , "Cake Oven", "Honey_Apple_Cake"),
-                new Food("Fruit Cake", 89, 450 , "Cake Oven", "Fruit_Cake"),
-                new Food("Pineapple Cake", 65, 259 , "Cake Oven", "Pineapple_Cake"),
-                new Food("Fancy Cake", 54, 450 , "Cake Oven", "Fancy_Cake"),
-                new Food("Chocolate Roll", 95, 604 , "Cake Oven", "Chocolate_Roll"),
+                new Food("كعكة الجبن", 24, 284 , "فرن كعك", "Cheese_cake"),
+                new Food("كعكة الجزر", 21, 165 , "فرن كعك", "Carrot_Cake"),
+                new Food("كعكة القشطة", 23, 219 , "فرن كعك", "Cream_Cake"),
+                new Food("كعكة الشوكولاتة", 36, 320 , "فرن كعك", "Chocolate_Cake"),
+                new Food("معمة الفراولة", 35, 316 , "فرن كعك", "Strawberry_Cake"),
+                new Food("كعكة التوت الأحمر", 23, 255 , "فرن كعك", "Red_Berry_Cake"),
+                new Food("كعكة بطاطس وجبن فيتا", 38, 309 , "فرن كعك", "Potato_Feta_Cake"),
+                new Food("كعكة ليمون", 68, 896 , "فرن كعك", "Lemon_Cake"),
+                new Food("كعكة التفاح والعسل", 42, 482 , "فرن كعك", "Honey_Apple_Cake"),
+                new Food("كعكة فواكه", 89, 450 , "فرن كعك", "Fruit_Cake"),
+                new Food("كعكة الأناناس", 65, 259 , "فرن كعك", "Pineapple_Cake"),
+                new Food("كعكة مزينة", 54, 450 , "فرن كعك", "Fancy_Cake"),
+                new Food("ملفوف الشوكولاتة", 95, 604 , "فرن كعك", "Chocolate_Roll"),
                 
-                new Food("Strawberry Candle", 48, 370 , "Candle Maker", "Strawberry_Candle"),
-                new Food("Raspberry Candle", 52, 360 , "Candle Maker", "Raspberry_Candle"),
-                new Food("Lemon Candle", 72, 457 , "Candle Maker", "Lemon_Candle"),
-                new Food("Colorful Candle", 84, 324 , "Candle Maker", "Colorful_Candles"),
-                new Food("Floral Candle", 95, 442 , "Candle Maker", "Floral_Candle"),
+                new Food("شمعة فراولة", 48, 370 , "آلة صناعة الشمع ", "Strawberry_Candle"),
+                new Food("شمعة توت", 52, 360 , "آلة صناعة الشمع ", "Raspberry_Candle"),
+                new Food("شمعة ليمون", 72, 457 , "آلة صناعة الشمع ", "Lemon_Candle"),
+                new Food(" شمعة متعددة الالوان", 84, 324 , "آلة صناعة الشمع ", "Colorful_Candles"),
+                new Food("شمعة زهرية", 95, 442 , "آلة صناعة الشمع ", "Floral_Candle"),
                 
-                new Food("Caramel Apple", 51, 255 , "Candy Machine", "Caramel_Apple"),
-                new Food("Toffee", 52, 176 , "Candy Machine", "Toffee"),
-                new Food("Chocolate", 54, 460 , "Candy Machine", "Chocolate"),
-                new Food("Lollipop", 57, 342 , "Candy Machine", "Lollipop"),
-                new Food("Jelly Beans", 60, 684 , "Candy Machine", "Jelly_Beans"),
-                new Food("Cotton Candy", 75, 226 , "Candy Machine", "Cotton_Candy"),
-                new Food("Sesame Brittle", 78, 270 , "Candy Machine", "Sesame_Brittle"),
-                new Food("Honey Peanuts", 63, 468 , "Candy Machine", "Honey_Peanuts"),
+                new Food("تفاحة الكراميل", 51, 255 , "ألة صناعة الحلوى", "Caramel_Apple"),
+                new Food("حلوى الطوفي", 52, 176 , "ألة صناعة الحلوى", "Toffee"),
+                new Food("شوكولاتة", 54, 460 , "ألة صناعة الحلوى", "Chocolate"),
+                new Food("مصاصة", 57, 342 , "ألة صناعة الحلوى", "Lollipop"),
+                new Food("حبوب حلوى الجيلي", 60, 684 , "ألة صناعة الحلوى", "Jelly_Beans"),
+                new Food("حلوى القطن", 75, 226 , "ألة صناعة الحلوى", "Cotton_Candy"),
+                new Food("فول سوداني بالعسل", 78, 270 , "ألة صناعة الحلوى", "Sesame_Brittle"),
+                new Food("حلوى بالسمسم", 63, 468 , "ألة صناعة الحلوى", "Honey_Peanuts"),
                 
-                new Food("Espresso", 42, 248 , "Coffee Kiosk", "Espresso"),
-                new Food("caffe Latte", 43, 219 , "Coffee Kiosk", "Caffe_Latte"),
-                new Food("Caffe Mocha", 45, 291 , "Coffee Kiosk", "Caffe_Mocha"),
-                new Food("Raspberry Mocha", 46, 259 , "Coffee Kiosk", "Raspberry_Mocha"),
-                new Food("Hot Chocolate", 47, 316 , "Coffee Kiosk", "Hot_Chocolate"),
-                new Food("Iced Banana Latte", 88, 277 , "Coffee Kiosk", "Iced_Banana_Latte"),
-                new Food("Caramel Latte", 62, 345 , "Coffee Kiosk", "Caramel_Latte"),
+                new Food("قهوة مركزة", 42, 248 , "كشك القهوة", "Espresso"),
+                new Food("قهوة بالحليب", 43, 219 , "كشك القهوة", "Caffe_Latte"),
+                new Food("قهوة موكا", 45, 291 , "كشك القهوة", "Caffe_Mocha"),
+                new Food("موكا التوت", 46, 259 , "كشك القهوة", "Raspberry_Mocha"),
+                new Food("شوكولاتة ساخنة", 47, 316 , "كشك القهوة", "Hot_Chocolate"),
+                new Food("لاتيه الموز المثلج", 88, 277 , "كشك القهوة", "Iced_Banana_Latte"),
+                new Food("لانيه الكراميل", 62, 345 , "كشك القهوة", "Caramel_Latte"),
 
                 new Food("Plain Cupcake", 109, 280 , "Cupcake Maker", "Plain_Cupcake"),
                 new Food("Guava Cupcake", 109, 583 , "Cupcake Maker", "Guava_Cupcake"),
                 new Food("Tropical Cupcake", 112, 572 , "Cupcake Maker", "Tropical_Cupcake"),
                 new Food("Cookie Cupcake", 114, 712 , "Cupcake Maker", "Cookie_Cupcake"),
                 
-                new Food("Cream", 6, 50 , "Dairy", "Cream"),
-                new Food("Butter", 9, 82 , "Dairy", "Butter"),
-                new Food("Cheese", 12, 122 , "Dairy", "Cheese"),
-                new Food("Goat Cheese", 33, 162 , "Dairy", "Goat_Cheese"),
+                new Food("القشدة", 6, 50 , "معمل ألبان", "Cream"),
+                new Food("الزبدة", 9, 82 , "معمل ألبان", "Butter"),
+                new Food("الجبن", 12, 122 , "معمل ألبان", "Cheese"),
+                new Food("جبن الماعز", 33, 162 , "معمل ألبان", "Goat_Cheese"),
                 
                 new Food("Bacon Fries", 87, 302 , "Deep Fryer", "Bacon_Fries"),
                 new Food("Chili Poppers", 98, 406 , "Deep Fryer", "Chili_Poppers"),
@@ -274,31 +274,31 @@ list.pop();
                 new Food("Fried Candy Bar", 100, 658 , "Deep Fryer", "Fried_Candy_Bar"),
                 new Food("Samosa", 103, 223 , "Deep Fryer", "Samosa"),
                 
-                new Food("Plain Donut", 76, 129 , "Donut Maker", "Plain_Donut"),
-                new Food("Sprinkled Donut", 79, 313 , "Donut Maker", "Sprinkled_Donut"),
-                new Food("Crunchy Donut", 82, 594 , "Donut Maker", "Crunchy_Donut"),
-                new Food("Cream Donut", 86, 230 , "Donut Maker", "Cream_Donut"),
-                new Food("Bacon Donut", 88, 388 , "Donut Maker", "Bacon_Donut"),
-                new Food("Filled Donut", 93, 403 , "Donut Maker", "Filled_Donut"),
+                new Food("دونت سادة", 76, 129 , "آلة صنع الدونت", "Plain_Donut"),
+                new Food("دونت مرشوش", 79, 313 , "آلة صنع الدونت", "Sprinkled_Donut"),
+                new Food("دونت مقرمش", 82, 594 , "آلة صنع الدونت", "Crunchy_Donut"),
+                new Food("دونت بالكريمة", 86, 230 , "آلة صنع الدونت", "Cream_Donut"),
+                new Food("دونت باللحم المقدد", 88, 388 , "آلة صنع الدونت", "Bacon_Donut"),
+                new Food("دونت محشو", 93, 403 , "آلة صنع الدونت", "Filled_Donut"),
                 
-                new Food("Fish Fillet", 27, 54 , "Fishing", "Fish_Fillet"),
-                new Food("Lobster Tail", 44, 201 , "Fishing", "Lobster_Tail"),
-                new Food("Duck Feather", 50, 140 , "Fishing", "Duck_Feather"),
+                new Food("فيليه سمك", 27, 54 , "صيد", "Fish_Fillet"),
+                new Food("ذيل سرطان البحر", 44, 201 , "صيد", "Lobster_Tail"),
+                new Food("ريش البط", 50, 140 , "صيد", "Duck_Feather"),
                 
-                new Food("Rustic Bouquet", 49, 208 , "Flowershop", "Rustic_Bouquet"),
-                new Food("Bright Bouquet", 65, 338 , "Flowershop", "Bright_Bouquet"),
-                new Food("Gracious Bouquet", 73, 500 , "Flowershop", "Gracious_Bouquet"),
-                new Food("Candy Bouquet", 90, 554 , "Flowershop", "Candy_Bouquet"),
-                new Food("Birthday Bouquet", 92, 349 , "Flowershop", "Birthday_Bouquet"),
-                new Food("Soft Bouquet", 93, 298 , "Flowershop", "Soft_Bouquet"),           
-                new Food("Veggie Bouquet", 106, 352 , "Flowershop", "Veggie_Bouquet"),
+                new Food("باقة زهور روستيك", 49, 208 , "متجر زهور", "Rustic_Bouquet"),
+                new Food("باقة زهور ساطعة", 65, 338 , "متجر زهور", "Bright_Bouquet"),
+                new Food("باقة جميلة", 73, 500 , "متجر زهور", "Gracious_Bouquet"),
+                new Food("باقة حلوى", 90, 554 , "متجر زهور", "Candy_Bouquet"),
+                new Food("باقة أزهار عيد الميلاد", 92, 349 , "متجر زهور", "Birthday_Bouquet"),
+                new Food("باقة زهور هادئة", 93, 298 , "متجر زهور", "Soft_Bouquet"),           
+                new Food("Veggie Bouquet", 106, 352 , "متجر زهور", "Veggie_Bouquet"),
                 
                 
                 
-                new Food("Chocolate Fondue", 81, 626 , "Fondue Pot", "Chocolate_Fondue"),
-                new Food("Bacon Fondue", 86, 507 , "Fondue Pot", "Bacon_Fondue"),
-                new Food("Cheese Fondue", 91, 493 , "Fondue Pot", "Cheese_Fondue"),
-                new Food("Tropical Fondue", 100, 417 , "Fondue Pot", "Tropical_Fondue"),
+                new Food("فوندو الشوكولاتة", 81, 626 , "قدر الفوندو", "Chocolate_Fondue"),
+                new Food("قوندو اللحم المقدد", 86, 507 , "قدر الفوندو", "Bacon_Fondue"),
+                new Food("فوندو الجبن", 91, 493 , "قدر الفوندو", "Cheese_Fondue"),
+                new Food("فوندو استوائي", 100, 417 , "قدر الفوندو", "Tropical_Fondue"),
 
                 new Food("Rich Fudge", 99, 644 , "Fudge Shop", "Rich_Fudge"),
                 new Food("Mint Fudge", 102, 522 , "Fudge Shop", "Mint_Fudge"),
@@ -306,18 +306,18 @@ list.pop();
                 new Food("Lemon Fudge", 108, 590 , "Fudge Shop", "Lemon_Fudge"),
                 new Food("Peanut Fudge", 111, 1141 , "Fudge Shop", "Peanut_Fudge"),
                 
-                new Food("Cloche Hat", 70, 468 , "Hat Maker", "Cloche_Hat"),
-                new Food("Top Hat", 72, 619 , "Hat Maker", "Top_Hat"),
-                new Food("Sun Hat", 74, 558 , "Hat Maker", "Sun_Hat"),
-                new Food("Flower Crown", 86, 331 , "Hat Maker", "Flower_Crown"),
+                new Food("قبعة نسائية", 70, 468 , "آلة صناعة القبعات", "Cloche_Hat"),
+                new Food("قبعة عالية", 72, 619 , "آلة صناعة القبعات", "Top_Hat"),
+                new Food("قبعة شمس", 74, 558 , "آلة صناعة القبعات", "Sun_Hat"),
+                new Food("تاج من الزهور", 86, 331 , "آلة صناعة القبعات", "Flower_Crown"),
                 
-                new Food("Honey", 39, 154 , "Honey Extractor", "Honey"),
-                new Food("Beeswax", 48, 234 , "Honey Extractor", "Beeswax"),
+                new Food("عسل", 39, 154 , "آلة استخراج العسل", "Honey"),
+                new Food("شمع العسل", 48, 234 , "آلة استخراج العسل", "Beeswax"),
                 
-                new Food("Hot Dog", 75, 370 , "Hot Dog Stand", "Hot_Dog"),
-                new Food("Tofu Dog", 76, 367 , "Hot Dog Stand", "Tofu_Dog"),
-                new Food("Corn Dog", 78, 529 , "Hot Dog Stand", "Corn_Dog"),
-                new Food("Onion Dog", 80, 306 , "Hot Dog Stand", "Onion_Dog"),
+                new Food("نقانق", 75, 370 , "منصة النقانق", "Hot_Dog"),
+                new Food("نقانق التوفو", 76, 367 , "منصة النقانق", "Tofu_Dog"),
+                new Food("نقانق الذرة", 78, 529 , "منصة النقانق", "Corn_Dog"),
+                new Food("نقانق البصل", 80, 306 , "منصة النقانق", "Onion_Dog"),
                 
                 new Food("Vanilla Ice Cream", 29, 172 , "Ice Cream Maker", "Vanilla_Ice_Cream"),
                 new Food("Cherry Popsicle", 33, 352 , "Ice Cream Maker", "Cherry_Popsicle"),
@@ -333,22 +333,22 @@ list.pop();
                 new Food("Coconut ice cream", 102, 320 , "Ice Cream Maker", "Coconut_Ice_Cream"),
                 new Food("Fruit Sorbet", 106, 518 , "Ice Cream Maker", "Fruit_Sorbet"),
                 
-                new Food("Apple Jam", 35, 219 , "Jam Maker", "Apple_Jam"),
-                new Food("Raspberry Jam", 36, 252 , "Jam Maker", "Raspberry_Jam"),
-                new Food("Blackberry Jam", 37, 388 , "Jam Maker", "Blackberry_Jam"),
-                new Food("Cherry Jam", 38, 334 , "Jam Maker", "Cherry_Jam"),
-                new Food("Strawberry Jam", 50, 270 , "Jam Maker", "Strawberry_Jam"),
-                new Food("Marmalade", 74, 457 , "Jam Maker", "Marmalade"),
-                new Food("Peach Jam", 79, 464 , "Jam Maker", "Peach_Jam"),
-                new Food("Grape Jam", 85, 162 , "Jam Maker", "Grape_Jam"),
-                new Food("Plum Jam", 94, 385 , "Jam Maker", "Plum_Jam"),
-                new Food("Passion Fruit Jam", 96, 118 , "Jam Maker", "Passion_Fruit_Jam"),
+                new Food("مربى التفاح", 35, 219 , "آلة صناعة  المربى", "Apple_Jam"),
+                new Food("مربى التوت", 36, 252 , "آلة صناعة  المربى", "Raspberry_Jam"),
+                new Food("مربى توت العليق", 37, 388 , "آلة صناعة  المربى", "Blackberry_Jam"),
+                new Food("مربى الكرز", 38, 334 , "آلة صناعة  المربى", "Cherry_Jam"),
+                new Food("مربى الفراولة", 50, 270 , "آلة صناعة  المربى", "Strawberry_Jam"),
+                new Food("مربى الحمضيات", 74, 457 , "آلة صناعة  المربى", "Marmalade"),
+                new Food("مربى الخوخ", 79, 464 , "آلة صناعة  المربى", "Peach_Jam"),
+                new Food("مربى العنب", 85, 162 , "آلة صناعة  المربى", "Grape_Jam"),
+                new Food("مربى البرقوق", 94, 385 , "آلة صناعة  المربى", "Plum_Jam"),
+                new Food("مربى فاكهة زهرة الآلام", 96, 118 , "آلة صناعة  المربى", "Passion_Fruit_Jam"),
                 
-                new Food("Bracelet", 38, 514 , "Jeweler", "Bracelet"),
-                new Food("Necklace", 39, 727 , "Jeweler", "Necklace"),
-                new Food("Diamond Ring", 40, 824 , "Jeweler", "Diamond_Ring"),
-                new Food("Iron Bracelet", 41, 658 , "Jeweler", "Iron_Bracelet"),
-                new Food("Flower Pendant", 98, 698 , "Jeweler", "Flower_Pendant"),
+                new Food("سوار", 38, 514 , "صائغ", "Bracelet"),
+                new Food("قلادة", 39, 727 , "صائغ", "Necklace"),
+                new Food("خاتم ماسي", 40, 824 , "صائغ", "Diamond_Ring"),
+                new Food("سوار حديدي", 41, 658 , "صائغ", "Iron_Bracelet"),
+                new Food("دلاية الوردة", 98, 698 , "صائغ", "Flower_Pendant"),
                 
                 new Food("Carrot Juice", 26, 46 , "Juice Press", "Carrot_Juice"),
                 new Food("Tomato Juice", 31, 162 , "Juice Press", "Tomato_Juice"),
@@ -363,12 +363,12 @@ list.pop();
                 new Food("Pineapple Juice", 52, 68 , "Juice Press", "Pineapple_Juice"),
                 new Food("Guava Juice", 104, 252 , "Juice Press", "Guava_Juice"),
                 
-                new Food("Sweater", 17, 151 , "Loom", "Sweater"),
-                new Food("Blue Woolly Hat", 19, 111 , "Loom", "Blue_Woolly_Hat"),
-                new Food("Blue Sweater", 20, 208 , "Loom", "Blue_Sweater"),
-                new Food("Red Scarf", 48, 288 , "Loom", "Red_Scarf"),
-                new Food("Cotton Fabric", 18, 108 , "Loom", "Cotton_Fabric"),
-                new Food("Flower Shawl", 71, 295 , "Loom", "Flower_Shawl"),
+                new Food("سترة", 17, 151 , "منسج", "Sweater"),
+                new Food("قبعة صوف زرقاء", 19, 111 , "منسج", "Blue_Woolly_Hat"),
+                new Food("سترة زرقاء", 20, 208 , "منسج", "Blue_Sweater"),
+                new Food("الوشاح الأحمر", 48, 288 , "منسج", "Red_Scarf"),
+                new Food("نسيج القطن", 18, 108 , "منسج", "Cotton_Fabric"),
+                new Food("وشاح من الزهور", 71, 295 , "منسج", "Flower_Shawl"),
                 
                 new Food("Gnocchi", 72, 475 , "Pasta Kitchen", "Gnocchi"),
                 new Food("Veggie Lasagna", 74, 532 , "Pasta Kitchen", "Veggie_Lasagna"),
@@ -378,34 +378,34 @@ list.pop();
                 new Food("Broccoli Pasta", 83, 345 , "Pasta Kitchen", "Broccoli_Pasta"),
                 new Food("Mushroom Pasta", 101, 280 , "Pasta Kitchen", "Mushroom_Pasta"),
                 
-                new Food("Fresh Pasta", 67, 43 , "Pasta Maker", "Fresh_Pasta"),
-                new Food("Rice Noodles", 73, 100 , "Pasta Maker", "Rice_Noodles"),
+                new Food("باستا طازجة", 67, 43 , "ألة الباستا", "Fresh_Pasta"),
+                new Food("شعرية الأرز", 73, 100 , "ألة الباستا", "Rice_Noodles"),
                 
-                new Food("Carrot Pie", 14, 82 , "Pie Oven", "Carrot_Pie"),
-                new Food("Bacon Pie", 18, 219 , "Pie Oven", "Bacon_Pie"),
-                new Food("Pumpkin Pie", 15, 158 , "Pie Oven", "Pumpkin_Pie"),
-                new Food("Apple Pie", 28, 270 , "Pie Oven", "Apple_Pie"),
-                new Food("Feta Pie", 34, 223 , "Pie Oven", "Feta_Pie"),
-                new Food("Casserole", 36, 367 , "Pie Oven", "Casserole"),
-                new Food("Shepherds Pie", 39, 280 , "Pie Oven", "Shepherds_Pie"),
-                new Food("Fish Pie", 28, 226 , "Pie Oven", "Fish_Pie"),
-                new Food("Lemon Pie", 67, 446 , "Pie Oven", "Lemon_Pie"),
-                new Food("Peach Tart", 76, 435 , "Pie Oven", "Peach_Tart"),
-                new Food("Passion Fruit Pie", 92, 111 , "Pie Oven", "Passion_Fruit_Pie"),
-                new Food("Mushroom Pot Pie", 97, 162 , "Pie Oven", "Mushroom_Pot_Pie"),
-                new Food("Eggplant Parmesan", 99, 442 , "Pie Oven", "Eggplant_Parmesan"),
-                new Food("Chocolate Pie", 65, 514 , "Pie Oven", "Chocolate_Pie"),
+                new Food("فطيرة الجزر", 14, 82 , "فرن الفطائر", "Carrot_Pie"),
+                new Food("فطيرة اللحم المقدد", 18, 219 , "فرن الفطائر", "Bacon_Pie"),
+                new Food("فطيرة القرع", 15, 158 , "فرن الفطائر", "Pumpkin_Pie"),
+                new Food("فطيرة التفاح", 28, 270 , "فرن الفطائر", "Apple_Pie"),
+                new Food("فطيرة جبن الفيتا", 34, 223 , "فرن الفطائر", "Feta_Pie"),
+                new Food("كسرولة", 36, 367 , "فرن الفطائر", "Casserole"),
+                new Food("فطيرة الراعي", 39, 280 , "فرن الفطائر", "Shepherds_Pie"),
+                new Food("فطيرة السمك", 28, 226 , "فرن الفطائر", "Fish_Pie"),
+                new Food("فطيرة ليمون", 67, 446 , "فرن الفطائر", "Lemon_Pie"),
+                new Food("فطيرة الخوخ", 76, 435 , "فرن الفطائر", "Peach_Tart"),
+                new Food("فطيرة فاكهة زهرة الألام", 92, 111 , "فرن الفطائر", "Passion_Fruit_Pie"),
+                new Food("فطيرة الكرنب والفطر", 97, 162 , "فرن الفطائر", "Mushroom_Pot_Pie"),
+                new Food("باذنجان بالجبن", 99, 442 , "فرن الفطائر", "Eggplant_Parmesan"),
+                new Food("فطيرة الشوكولاتة", 65, 514 , "فرن الفطائر", "Chocolate_Pie"),
                 
-                new Food("Popcorn", 8, 32 , "Popcorn Pot", "Popcorn"),
-                new Food("Buttered Popcorn", 16, 126 , "Popcorn Pot", "Buttered_Popcorn"),
-                new Food("Chili Popcorn", 25, 122 , "Popcorn Pot", "Chili_Popcorn"),
-                new Food("Chocolate Popcorn", 44, 248 , "Popcorn Pot", "Chocolate_Popcorn"),
-                new Food("Honey Popcorn", 40, 360 , "Popcorn Pot", "Honey_Popcorn"),
-                new Food("Snack Mix", 64, 309 , "Popcorn Pot", "Snack_Mix"),
+                new Food("فشار", 8, 32 , "ألة فشار", "Popcorn"),
+                new Food("فشار بالزبدة", 16, 126 , "ألة فشار", "Buttered_Popcorn"),
+                new Food("فشار حار", 25, 122 , "ألة فشار", "Chili_Popcorn"),
+                new Food("فشار الشوكولاتة", 44, 248 , "ألة فشار", "Chocolate_Popcorn"),
+                new Food("فشار عسل", 40, 360 , "ألة فشار", "Honey_Popcorn"),
+                new Food("مقرمشات مشكلة", 64, 309 , "ألة فشار", "Snack_Mix"),
 
-                new Food("Tea Pot", 94, 219 , "Pottery studio", "Tea_Pot"),
-                new Food("Potted Plant", 96, 151 , "Pottery studio", "Potted_Plant"),
-                new Food("Clay Mug", 99, 212 , "Pottery studio", "Clay_Mug"),
+                new Food("إبريق شاي", 94, 219 , "مشغل صناعة الفخار", "Tea_Pot"),
+                new Food("نبتة في أصيص", 96, 151 , "مشغل صناعة الفخار", "Potted_Plant"),
+                new Food("كوب فخار", 99, 212 , "مشغل صناعة الفخار", "Clay_Mug"),
 
                 new Food("Pickles", 91, 270 , "Preservation Station", "Pickles"),
                 new Food("Canned fish", 95, 471 , "Preservation Station", "Canned_Fish"),
@@ -413,17 +413,17 @@ list.pop();
                 new Food("Dried fruit", 102, 266 , "Preservation Station", "Dried_Fruit"),
                 new Food("Guava Compote", 104, 421 , "Preservation Station", "Guava_Compote"),
                 
-                new Food("Feta Salad", 58, 745 , "Salad Bar", "Feta_Salad"),
-                new Food("BLT Salad", 62, 723 , "Salad Bar", "BLT_Salad"),
-                new Food("Seafood Salad", 64, 763 , "Salad Bar", "Seafood_Salad"),
-                new Food("Pasta Salad", 67, 759 , "Salad Bar", "Pasta_Salad"),
-                new Food("Fruit Salad", 82, 597 , "Salad Bar", "Fruit_Salad"),
-                new Food("Summer Salad", 84, 554 , "Salad Bar", "Summer_Salad"),
-                new Food("Summer Rolls", 78, 316 , "Salad Bar", "Summer_Rolls"),
-                new Food("Coleslaw", 75, 468 , "Salad Bar", "Coleslaw"),
-                new Food("Veggie Platter", 74, 266 , "Salad Bar", "Veggie_Platter"),
-                new Food("Mushroom Salad", 89, 216 , "Salad Bar", "Mushroom_Salad"),
-                new Food("Beetroot Salad", 76, 234 , "Salad Bar", "Beetroot_Salad"),
+                new Food("سلاطة الفيتا", 58, 745 , "قسم السلاطة", "Feta_Salad"),
+                new Food("سلاطى لحم وخضروات", 62, 723 , "قسم السلاطة", "BLT_Salad"),
+                new Food("سلاطة الأطعمة البحرية", 64, 763 , "قسم السلاطة", "Seafood_Salad"),
+                new Food("سلاطة الباستا", 67, 759 , "قسم السلاطة", "Pasta_Salad"),
+                new Food("سلاطة الفواكة", 82, 597 , "قسم السلاطة", "Fruit_Salad"),
+                new Food("سلاطة الصيف", 84, 554 , "قسم السلاطة", "Summer_Salad"),
+                new Food("لفائف سمر رولز", 78, 316 , "قسم السلاطة", "Summer_Rolls"),
+                new Food("سلطة الكرنب", 75, 468 , "قسم السلاطة", "Coleslaw"),
+                new Food("طبق خضروات", 74, 266 , "قسم السلاطة", "Veggie_Platter"),
+                new Food("سلطة الفطر", 89, 216 , "قسم السلاطة", "Mushroom_Salad"),
+                new Food("سلطة البنجر", 76, 234 , "قسم السلاطة", "Beetroot_Salad"),
                 
                 new Food("Bacon Toast", 65, 648 , "Sandwich Bar", "Bacon_Toast"),
                 new Food("Veggie Bagel", 61, 532 , "Sandwich Bar", "Veggie_Bagel"),
@@ -435,29 +435,29 @@ list.pop();
                 new Food("Peanut Butter and Jelly Sandwich", 71, 601 , "Sandwich Bar", "Peanut_Butter_and_Jelly_Sandwich"),
                 new Food("Hummus Wrap", 109, 374 , "Sandwich Bar", "Hummus_Wrap"), 
                 
-                new Food("Soy Sauce", 54, 154 , "Sauce Maker", "Soy_Sauce"),
-                new Food("Olive Oil", 60, 277 , "Sauce Maker", "Olive_Oil"),
-                new Food("Mayonnaise", 62, 367 , "Sauce Maker", "Mayonnaise"),
-                new Food("Lemon Curd", 66, 378 , "Sauce Maker", "Lemon_Curd"),
-                new Food("Tomato Sauce", 69, 230 , "Sauce Maker", "Tomato_Sauce"),
-                new Food("Salsa", 77, 252 , "Sauce Maker", "Salsa"),
-                new Food("Olive Dip", 62, 468 , "Sauce Maker", "Olive_Dip"),
-                new Food("Hummus", 95, 277 , "Sauce Maker", "Hummus"),
-                new Food("Tart Dressing", 100, 288 , "Sauce Maker", "Tart_Dressing"),
+                new Food("صلصة صويا", 54, 154 , "آلة صناعة الصلصة", "Soy_Sauce"),
+                new Food("زيت زيتون", 60, 277 , "آلة صناعة الصلصة", "Olive_Oil"),
+                new Food("مايونيز", 62, 367 , "آلة صناعة الصلصة", "Mayonnaise"),
+                new Food("ليمون متخثر", 66, 378 , "آلة صناعة الصلصة", "Lemon_Curd"),
+                new Food("صلصة طماطم", 69, 230 , "آلة صناعة الصلصة", "Tomato_Sauce"),
+                new Food("صلصة", 77, 252 , "آلة صناعة الصلصة", "Salsa"),
+                new Food("زيت زيتون", 62, 468 , "آلة صناعة الصلصة", "Olive_Dip"),
+                new Food("هريسة حمص", 95, 277 , "آلة صناعة الصلصة", "Hummus"),
+                new Food("صلصة فاكهة الألام", 100, 288 , "آلة صناعة الصلصة", "Tart_Dressing"),
 
                 
                 
-                new Food("Cotton Shirt", 19, 241 , "Sewing Machine", "Cotton_Shirt"),
-                new Food("Wooly Chaps", 21, 309 , "Sewing Machine", "Wooly_Chaps"),
-                new Food("Violet Dress", 25, 327 , "Sewing Machine", "Violet_Dress"),
-                new Food("Pillow", 51, 676 , "Sewing Machine", "Pillow"),
-                new Food("Blanket", 59, 1098 , "Sewing Machine", "Blanket"),
+                new Food("قميص قطني", 19, 241 , "ألة الحياكة", "Cotton_Shirt"),
+                new Food("سروال صوف", 21, 309 , "ألة الحياكة", "Wooly_Chaps"),
+                new Food("فستان بنفسجي", 25, 327 , "ألة الحياكة", "Violet_Dress"),
+                new Food("وسادة", 51, 676 , "ألة الحياكة", "Pillow"),
+                new Food("بطانية", 59, 1098 , "ألة الحياكة", "Blanket"),
                 
-                new Food("Silver Bar", 24, 147 , "Smelter", "Silver_Bar"),
-                new Food("Gold Bar", 25, 180 , "Smelter", "Gold_Bar"),
-                new Food("Platinum Bar", 25, 205 , "Smelter", "Platinum_Bar"),
-                new Food("Refined Coal", 33, 108 , "Smelter", "Refined_Coal"),
-                new Food("Iron Bar", 34, 129 , "Smelter", "Iron_Bar"),
+                new Food("سبيكة فضة", 24, 147 , "المصهر", "Silver_Bar"),
+                new Food("سبيكة ذهب", 25, 180 , "المصهر", "Gold_Bar"),
+                new Food("سبيكة بلاتين", 25, 205 , "المصهر", "Platinum_Bar"),
+                new Food("فحم مكرر", 33, 108 , "المصهر", "Refined_Coal"),
+                new Food("سبيكة حديد", 34, 129 , "المصهر", "Iron_Bar"),
                 
                 new Food("Green Smoothie", 66, 320 , "Smoothie Mixer", "Green_Smoothie"),
                 new Food("Berry Smoothie", 64, 547 , "Smoothie Mixer", "Berry_Smoothie"),
@@ -469,27 +469,27 @@ list.pop();
                 new Food("Black Sesame Smoothie", 93, 313 , "Smoothie Mixer", "Black_Sesame_Smoothie"),
                 new Food("Tropical Smoothie", 104, 475 , "Smoothie Mixer", "Tropical_Smoothie"),
                 
-                new Food("Lobster Soup", 46, 612 , "Soup Kitchen", "Lobster_Soup"),
-                new Food("Tomato Soup", 47, 478 , "Soup Kitchen", "Tomato_Soup"),
-                new Food("Fish Soup", 53, 298 , "Soup Kitchen", "Fish_Soup"),
-                new Food("Pumpkin Soup", 49, 392 , "Soup Kitchen", "Pumpkin_Soup"),
-                new Food("Onion Soup", 72, 327 , "Soup Kitchen", "Onion_Soup"),
-                new Food("Noodle Soup", 73, 432 , "Soup Kitchen", "Noodle_Soup"),
-                new Food("Cabbage Soup", 65, 270 , "Soup Kitchen", "Cabbage_Soup"),
-                new Food("Potato Soup", 78, 255 , "Soup Kitchen", "Potato_Soup"),
-                new Food("Bell Pepper Soup", 81, 439 , "Soup Kitchen", "Bell_Pepper_Soup"),
-                new Food("Broccoli Soup", 87, 237 , "Soup Kitchen", "Broccoli_Soup"),
-                new Food("Mushroom Soup", 104, 176 , "Soup Kitchen", "Mushroom_Soup"),
+                new Food("حساء سرطان البحر", 46, 612 , "مطبخ الحساء", "Lobster_Soup"),
+                new Food("حساء الطماطم", 47, 478 , "مطبخ الحساء", "Tomato_Soup"),
+                new Food("حساء السمك", 53, 298 , "مطبخ الحساء", "Fish_Soup"),
+                new Food("حساء قرع العسل", 49, 392 , "مطبخ الحساء", "Pumpkin_Soup"),
+                new Food("حساء البصل", 72, 327 , "مطبخ الحساء", "Onion_Soup"),
+                new Food("حساء المعكرونة", 73, 432 , "مطبخ الحساء", "Noodle_Soup"),
+                new Food("حساء الكرنب", 65, 270 , "مطبخ الحساء", "Cabbage_Soup"),
+                new Food("حساء البطاطس", 78, 255 , "مطبخ الحساء", "Potato_Soup"),
+                new Food("حساء فلفل رومي", 81, 439 , "مطبخ الحساء", "Bell_Pepper_Soup"),
+                new Food("حساء البروكلي", 87, 237 , "مطبخ الحساء", "Broccoli_Soup"),
+                new Food("حساء الفطر", 104, 176 , "مطبخ الحساء", "Mushroom_Soup"),
                 
-                new Food("Peanuts", 62, 234 , "Squirrel Tree", "Peanuts"),
+                new Food("فول سوداني", 62, 234 , "بيت السناجب", "Peanuts"),
                 
                 new Food("Chickpea Stew", 106, 284 , "Stew Pot", "Chickpea_Stew"),
                 new Food("Chili Stew", 109, 370 , "Stew Pot", "Chili_Stew"),
                 new Food("Winter Stew", 112, 295 , "Stew Pot", "Winter_Stew"),
 
-                new Food("Brown Sugar", 7, 32 , "Sugar Mill", "Brown_Sugar"),
-                new Food("White Sugar", 13, 50 , "Sugar Mill", "White_Sugar"),
-                new Food("Syrup", 18, 90 , "Sugar Mill", "Syrup"),
+                new Food("سكر بني", 7, 32 , "طاحونة السكر", "Brown_Sugar"),
+                new Food("سكر أبيض", 13, 50 , "طاحونة السكر", "White_Sugar"),
+                new Food("شارب", 18, 90 , "طاحونة السكر", "Syrup"),
                 
                 new Food("Sushi Roll", 56, 489 , "Sushi Bar", "Sushi_Roll"),
                 new Food("Lobster Sushi", 59, 637 , "Sushi Bar", "Lobster_Sushi"),
@@ -497,24 +497,24 @@ list.pop();
                 new Food("Big Sushi Roll", 76, 648 , "Sushi Bar", "Big_Sushi_Roll"),
                 new Food("Rice Ball", 110, 464 , "Sushi Bar", "Rice_Ball"),
                 
-                new Food("Taco", 77, 396 , "Taco Kitchen", "Taco"),
-                new Food("Fish Taco", 79, 392 , "Taco Kitchen", "Fish_Taco"),
-                new Food("Quesadilla", 82, 241 , "Taco Kitchen", "Quesadilla"),
-                new Food("Nachos", 87, 432 , "Taco Kitchen", "Nachos"),
+                new Food("تاكو", 77, 396 , "مطبخ التاكو", "Taco"),
+                new Food("تاكو سمكة", 79, 392 , "مطبخ التاكو", "Fish_Taco"),
+                new Food("كاساديا", 82, 241 , "مطبخ التاكو", "Quesadilla"),
+                new Food("ناتشو", 87, 432 , "مطبخ التاكو", "Nachos"),
                 
-                new Food("Green Tea", 80, 241 , "Tea Stand", "Green_Tea"),
-                new Food("Milk Tea", 81, 190 , "Tea Stand", "Milk_Tea"),
-                new Food("Honey Tea", 83, 313 , "Tea Stand", "Honey_Tea"),
-                new Food("Lemon Tea", 86, 241 , "Tea Stand", "Lemon_Tea"),
-                new Food("Orange Tea", 89, 255 , "Tea Stand", "Orange_Tea"),
-                new Food("Iced Tea", 92, 252 , "Tea Stand", "Iced_Tea"),
-                new Food("Mint Tea", 97, 255 , "Tea Stand", "Mint_Tea"),
-                new Food("Apple Ginger Tea", 88, 169 , "Tea Stand", "Apple_Ginger_Tea"),
+                new Food("شاي أخضر", 80, 241 , "كشك الشاي", "Green_Tea"),
+                new Food("شاي بالحليب", 81, 190 , "كشك الشاي", "Milk_Tea"),
+                new Food("شاي بالعسل", 83, 313 , "كشك الشاي", "Honey_Tea"),
+                new Food("شاي بالليمون", 86, 241 , "كشك الشاي", "Lemon_Tea"),
+                new Food("شاي بالبرتقال", 89, 255 , "كشك الشاي", "Orange_Tea"),
+                new Food("شاي مثلج", 92, 252 , "كشك الشاي", "Iced_Tea"),
+                new Food("شاي بالنعناع", 97, 255 , "كشك الشاي", "Mint_Tea"),
+                new Food("شاي بالزنجبيل والتفاح", 88, 169 , "كشك الشاي", "Apple_Ginger_Tea"),
                 
-                new Food("Fried Rice", 69, 205 , "Wok Kitchen", "Fried_Rice"),
-                new Food("Tofu Stir Fry", 89, 306 , "Wok Kitchen", "Tofu_Stir_Fry"),
-                new Food("Spicy Fish", 79, 543 , "Wok Kitchen", "Spicy_Fish"),
-                new Food("Peanut Noodles", 86, 597 , "Wok Kitchen", "Peanut_Noodles"),
+                new Food("أرز مقلي", 69, 205 , "مطبخ الووك", "Fried_Rice"),
+                new Food("توفو مقلي", 89, 306 , "مطبخ الووك", "Tofu_Stir_Fry"),
+                new Food("سمك حار", 79, 543 , "مطبخ الووك", "Spicy_Fish"),
+                new Food("شعرية الفول السوداني", 86, 597 , "مطبخ الووك", "Peanut_Noodles"),
 
                 new Food("Plain Yogurt", 103, 234 , "Yogurt Maker", "Plain_Yogurt"),
                 new Food("Strawberry Yogurt", 105, 529 , "Yogurt Maker", "Strawberry_Yogurt"),
@@ -535,7 +535,7 @@ list.pop();
                 }
                 
                 var t = document.getElementById("total")
-                t.innerHTML="Total Food Number: " + total;
+                t.innerHTML="مجموع عدد المنتجات: " + total;
                 
                 var last_fn = ""
                 for (idx in foods)
@@ -551,7 +551,7 @@ list.pop();
                         if (last_fn != foods[idx].fn)
                         {
                             var t = document.getElementById(foods[idx].fn)
-                            t.innerHTML    =    foods[idx].fn + "(Total:" + total + ")"
+                            t.innerHTML    =    foods[idx].fn + "(المجموع:" + total + ")"
                             last_fn  = foods[idx].fn
                         }
                     }
@@ -586,19 +586,19 @@ list.pop();
                 document.write("</div>");
 
                     document.write("<div class=\"col-5 heading\">");
-                        document.write( "<h4>Name</h4>");
+                        document.write( "<h4>الأسم</h4>");
                     document.write("</div>");
                 //     document.write("<div class=\"col-1 heading\">");
                 //     document.write("<h4></h4>");
                 // document.write("</div>");
                     document.write("<div class=\"col-2 heading\">");
-                        document.write("<h4>Level</h4> ");
+                        document.write("<h4>المستوى</h4> ");
                     document.write("</div>");
                     document.write("<div class=\"col-2 heading\">");
-                        document.write("<h4>Price</h4>" );
+                        document.write("<h4>السعر</h4>" );
                     document.write("</div>");
                     document.write("<div class=\"col-3 heading\">");
-                        document.write("<h4>Quantity</h4>");
+                        document.write("<h4>الكمية</h4>");
                     document.write("</div>");
                    
                     last_fn  = foods[idx].fn
@@ -613,19 +613,19 @@ list.pop();
                             document.write("<ul type=\"" + foods[idx].fn + "\">")
                         document.write("</div>"); 
                         document.write("<div class=\"col-5 heading\">");
-                        document.write( "<h4>Name</h4>");
+                        document.write( "<h4>الأسم</h4>");
                     document.write("</div>");
                     // document.write("<div class=\"col-3 heading\">");
                     //     document.write("<h4></h4>");
                     // document.write("</div>");            
                         document.write("<div class=\"col-2 heading\">");
-                        document.write("<h4>Level</h4> ");
+                        document.write("<h4>المستوى</h4> ");
                     document.write("</div>");
                     document.write("<div class=\"col-2 heading\">");
-                        document.write("<h4>Price</h4>" );
+                        document.write("<h4>السعر</h4>" );
                     document.write("</div>");
                     document.write("<div class=\"col-2 heading\">");
-                        document.write("<h4>Quantity</h4>");
+                        document.write("<h4>الكمية</h4>");
                     document.write("</div>");
                     
                         last_fn  = foods[idx].fn
@@ -660,6 +660,6 @@ list.pop();
     var brRegex = /<br\s*[\/]?>/gi;
     $("body").append($temp);
     $temp.val($(element).html().replace(brRegex, "\r\n")).select();
-    document.execCommand("copy");
+    document.execCommand("Copy");
     $temp.remove();
   }
